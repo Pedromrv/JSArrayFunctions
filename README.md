@@ -126,8 +126,8 @@ Output:
 
 En pocas palabras,
 
-filter: Cuando se necesita eliminar algún elemento no deseado del array.
-map: Convierte un array en otro.
+filter: Cuando se necesita eliminar algún elemento no deseado del array.  
+map: Convierte un array en otro.  
 reduce: Cuando se necesita reducir el array.
 
 
