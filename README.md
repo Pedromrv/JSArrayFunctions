@@ -345,6 +345,7 @@ Result
 ```
 
 <details><summary>Respuesta - ¡Haz Click!</summary>
+  
 ```javascript
 const input = [
     {
@@ -372,6 +373,7 @@ const input = [
   const ages = input.map(person => person.age);
 
   [Math.min(...ages), Math.max(...ages), Math.max(...ages) - Math.min(...ages)];
+  
 ```
 </details>
 
