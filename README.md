@@ -531,3 +531,218 @@ const input = [
 </details>
 
 
+
+## Ejemplos de código
+
+```javascript
+
+// Array Iteration: 8 methods
+
+  
+
+// map (it takes the item that's from the array ot does something to it and then
+
+// put a new thing back in that same place back in the array)(it doesn't change the original array)
+
+// let new_array = arr.map(function(element, index, array){
+
+// //return valor del new_array
+
+// });
+
+const three = [1,2,3];
+
+const doubled = three.map(function(item){
+
+return item * 2;
+
+});
+
+// console.log(three);
+
+// console.log(doubled);
+
+  
+
+//======================================map another example=====================================================
+
+const persons = [
+
+{firstName: "Malcom", lastName: "Reynolds"},
+
+{firstName: "Kaylee", lastName: "Frye"},
+
+{firstName: "Jayne", lastName: "Cobb"}
+
+]
+
+const getFullName = persons.map(function(item){
+
+return [item.firstName,item.lastName].join(" ");
+
+  
+
+});
+
+console.log(getFullName);
+
+//======================================map another example=====================================================
+
+  
+  
+
+//filter (it's going to take an array, and check each item in the array against some kind of condition
+
+// to see if it's true or false, if true put item back in array, if not it's not going to put it back)
+
+const ints = [1,2,3];
+
+const evens = ints.filter(function(item){
+
+return item % 2 === 0;
+
+});
+
+// console.log(evens);
+
+  
+
+//reduce (do something and then pass the result to the next iteration, along with the next item in the array)
+
+const sum = [1,2,3].reduce(function (result,item){
+
+return result + item;
+
+},0);
+
+// console.log(sum);
+
+  
+  
+
+// --- --- --- ---MORE Array Functions---
+
+  
+  
+
+//some (checks if any item in the entire array meets the condition it's going to be true,
+
+//if no items meet the condition it will be false)
+
+const hasNegativeNumbers = [1,2,3,4,-1,4].some(function(item){
+
+return item < 0;
+
+});
+
+// console.log(hasNegativeNumbers);
+
+  
+
+//every (every number has to meet the condition to be true)
+
+const allPositiveNumbers = [1,2,3].every(function(item){
+
+return item > 0;
+
+});
+
+// console.log(allPositiveNumbers);
+
+  
+
+//find (goes to every item in the array and checks it against the condition and if that's true it returns that item
+
+// if it doesn't find the item it will return undefined)
+
+const objects = [{ id: 'a'}, {id: 'b'}, {id: 'c'}];
+
+const found = objects.find(function(item){
+
+return item.id === 'b';
+
+});
+
+// console.log(found);
+
+  
+
+//find index (goes to every item in the array and checks it against the condition and if that's true it returns the index of the item)
+
+const objects2 = [{ id: 'a'}, {id: 'b'}, {id: 'c'}];
+
+const foundIndex = objects2.findIndex(function(item){
+
+return item.id === 'b';
+
+});
+
+// console.log(foundIndex);
+
+  
+
+//forEach (pasamos el item y el index del array)
+
+[1,2,3].forEach(function(item,index){
+
+// console.log(item,index);
+
+});
+
+  
+  
+  
+
+//======================================map another example=====================================================
+
+let almuerzos = [
+
+{principal: "arepa", postre: "helado"},
+
+{principal: "tacos", postre: "tarta de queso"},
+
+{principal: "pizza", postre: "galletas"},
+
+{principal: "sushi", postre: "flan"}
+
+];
+
+  
+
+// =====bucle for=====
+
+  
+
+// let platosPrincipales = [];
+
+  
+
+// for (let i = 0; i < almuerzos.length; i++) {
+
+// platosPrincipales.push(almuerzos[i].principal);
+
+// }
+
+  
+  
+
+// =====con map=====
+
+  
+
+let platosPrincipales = almuerzos.map(function(jesus){
+
+return jesus.principal;
+
+});
+
+  
+  
+
+// console.log(platosPrincipales);
+
+  
+
+//======================================map another example=====================================================
+
+```
