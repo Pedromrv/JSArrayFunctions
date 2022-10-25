@@ -232,7 +232,7 @@ Input
 Result
 
 ```javascript
-  { mean: 38.5, median: 32 }
+  { mean: 38.5, median: 39 }
 ```
 
 <details><summary>Respuesta - ¡Haz Click!</summary>
