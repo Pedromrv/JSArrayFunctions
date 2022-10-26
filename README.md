@@ -247,7 +247,7 @@ Result
 
     accumulator.mean += currentValue /  array.length;
 
-    if(Math.abs(index + 1  - array.length / 2) gt 1) { 
+    if(Math.abs(index + 1  - array.length / 2) < 1) { 
       accumulator.median = currentValue 
     }
 
